@@ -12,14 +12,14 @@ terraform {
     # 指定状态文件在存储桶中的路径和文件名
     key = "pipeline-terraform-statusfile/terraform.tfstate"
     # 指定 S3 存储桶所在的 AWS 区域
-    region = "us-east-1"
+    region = "ap-northeast-1"
   }
 }
 
 # 配置 AWS provider 和区域
 provider "aws" {
   # 配置 AWS 区域
-  # region = "us-east-1"  
+  # region = "ap-northeast-1"  
   # 配置 AWS 访问密钥明码，用于身份验证
   # 注意：直接在代码中使用明码访问密钥是不安全的，建议使用环境变量或其他安全的方式传递这些敏感信息
 }
